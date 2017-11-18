@@ -76,6 +76,4 @@ GCLOUD_DIR=$USER_BIN/google-cloud-sdk
 if [ -d "$GCLOUD_DIR" ]; then
 	. $GCLOUD_DIR/completion.bash.inc
 	. $GCLOUD_DIR/path.bash.inc
-else
-	echo "Cloud SDK dir does not exist: $GCLOUD_DIR"
 fi
