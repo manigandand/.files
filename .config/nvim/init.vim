@@ -70,6 +70,7 @@ Plug 'neomake/neomake'
 
 " Golang autocomplete plugin
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'jstemmer/gotags'
 
 " Trigger configuration (Optional)
 " let g:UltiSnipsExpandTrigger="<C-l>"
