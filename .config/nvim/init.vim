@@ -66,6 +66,7 @@ Plug 'neomake/neomake'
 
 " Golang autocomplete plugin
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'jstemmer/gotags'
 
 " Initialize plugin system
 call plug#end()
