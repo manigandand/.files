@@ -1,7 +1,12 @@
 # independant vars (Depends on static and builtins)
 export DOTFILES_DIR=$HOME/.files
 export EDITOR='nvim'
-export GOPATH=~/go
+# Gopath settings
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/gopher
+export PATH=$GOPATH/bin:$PATH
+
 export USER_BIN=$HOME/bin
 export PATH=$USER_BIN:$PATH
 export PATH=/usr/local/bin:$PATH
