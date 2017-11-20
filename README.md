@@ -5,7 +5,7 @@ My brand new .files (dotfiles).
 
 ```
 cd ~
-git clone git@github.com:dhilipsiva/.files.git
+git clone git@github.com:manigandand/.files.git
 pip3 install tmuxp powerline-shell
 cp .files/home.* ~
 Install Vim Plug: https://github.com/junegunn/vim-plug
