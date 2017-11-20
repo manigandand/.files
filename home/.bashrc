@@ -5,10 +5,19 @@ else
     source ~/.files/linux/profile.sh
 fi
 
-PATH="/home/dhilipsiva/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/dhilipsiva/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/dhilipsiva/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/dhilipsiva/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/dhilipsiva/perl5"; export PERL_MM_OPT;
+PATH="/home/manigandan/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/manigandan/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/manigandan/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/manigandan/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/manigandan/perl5"; export PERL_MM_OPT;
 
 eval "$(_TMUXP_COMPLETE=source tmuxp)"
+
+# Project specified shortcuts
+alias aircto='cd ~/gopher/src/code.aircto.in/root/aircto-backend && source config/app.env'
+alias rdckr='sudo docker start lookupd && sudo docker start nsqd'
+alias wrkr='./workerd'
+alias server='aircto-backend'
+alias gopath='export GOPATH=$HOME/gopher-lab'
+alias goi='go install -v'
+alias gob='go build -v'
