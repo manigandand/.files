@@ -70,7 +70,6 @@ Plug 'neomake/neomake'
 
 " Golang autocomplete plugin
 Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'w0rp/ale'
 
 " Trigger configuration (Optional)
 " let g:UltiSnipsExpandTrigger="<C-l>"
@@ -189,7 +188,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Disable showing tabs in the tabline. This will ensure that the buffers are
 " what is shown in the tabline at all times.
-let g:airline#extensions#tabline#show_tabs = 0
+let g:airline#extensions#tabline#show_tabs = 1
 
 " Enable powerline fonts.
 let g:airline_powerline_fonts = 0
@@ -321,13 +320,6 @@ let g:neomake_go_gometalinter_maker = {
   \   '%E%f:%l::%trror: %m,' .
   \   '%W%f:%l::%tarning: %m'
   \ }
-
-"----------------------------------------------
-" Plugin: 'w0rp/ale'
-"----------------------------------------------
-" Error and warning signs.
-let g:ale_sign_error = '⤫'
-let g:ale_sign_warning = '⚠'
 
 "----------------------------------------------
 " Plugin: 'majutsushi/tagbar'
