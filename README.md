@@ -10,3 +10,5 @@ pip3 install tmuxp powerline-shell
 cp .files/home.* ~
 Install Vim Plug: https://github.com/junegunn/vim-plug
 ```
+
+> Set XDG directories as /.files/.config/
