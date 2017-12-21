@@ -14,7 +14,7 @@ PERL_MM_OPT="INSTALL_BASE=/home/manigandan/perl5"; export PERL_MM_OPT;
 eval "$(_TMUXP_COMPLETE=source tmuxp)"
 
 # Project specified shortcuts
-alias aircto='cd ~/gopher/src/code.aircto.in/root/aircto-backend && source config/app.env'
+alias aircto='cd ~/go/src/code.aircto.in/root/aircto-backend && source config/app.env'
 alias rdckr='sudo docker start lookupd && sudo docker start nsqd'
 alias wrkr='./workerd'
 alias server='aircto-backend'

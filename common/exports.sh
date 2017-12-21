@@ -4,7 +4,8 @@ export EDITOR='nvim'
 # Gopath settings
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
-export GOPATH=$HOME/gopher
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 export PATH=$GOPATH/bin:$PATH
 
 export USER_BIN=$HOME/bin

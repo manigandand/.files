@@ -15,10 +15,11 @@ Install Vim Plug: https://github.com/junegunn/vim-plug
 
 ```
 cd
-git clone git@github.com:dhilipsiva/.files.git
+git clone git@github.com:manigandand/.files.git
 cd .files
 cp .env.template .env  # And change the required values
 pipenv shell
 pipenv install
 fab setup
 ```
+> Set XDG directories as /.files/.config/
