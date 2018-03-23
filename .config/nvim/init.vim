@@ -153,7 +153,6 @@ let g:lua_syntax_nostdlib = 1
 "----------------------------------------------
 " Plugin: scrooloose/nerdtree
 "----------------------------------------------
-nnoremap <leader>d :NERDTreeToggle<cr>
 nnoremap <F2> :NERDTreeToggle<cr>
 
 " Files to ignore
@@ -212,7 +211,7 @@ au FileType go set tabstop=4
 " Mappings
 au FileType go nmap <F9> :GoCoverageToggle -short<cr>
 au FileType go nmap <F10> :GoTest -short<cr>
-au FileType go nmap <F12> <Plug>(go-def)
+au FileType go nmap <C-d> <Plug>(go-def)
 au Filetype go nmap <leader>ga <Plug>(go-alternate-edit)
 au Filetype go nmap <leader>gah <Plug>(go-alternate-split)
 au Filetype go nmap <leader>gav <Plug>(go-alternate-vertical)
