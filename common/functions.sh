@@ -9,9 +9,11 @@ function search {
         --exclude-dir="dist" \
         --exclude-dir="tmp" \
         --exclude-dir=".sass-cache" \
+        --exclude-dir=".cache-loader" \
         --exclude-dir="Appknox" \
         --exclude-dir="build" \
         --exclude-dir="uploads" \
+        --exclude-dir=".ropeproject" \
         --color "$*" .
 }
 
@@ -39,4 +41,8 @@ function fix-git {
 function keys {
 	ssh-add ~/.ssh/google_compute_engine
 	ssh-add ~/.ssh/id_rsa
+}
+
+function 2nd {
+    awk '{print $2}'
 }

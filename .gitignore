@@ -101,5 +101,5 @@ ENV/
 .mypy_cache/
 
 .config
-.tmuxp/aircto.json
+.tmuxp/*
 .env
