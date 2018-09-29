@@ -36,15 +36,16 @@ def setup_gui():
 
 @task
 def setup():
-    deb.update_index()
-    deb.upgrade()
+    #deb.update_index()
+    #deb.upgrade()
     require.deb.packages(["build-essential", "python-pip", "unzip", "xclip", "tmux", "git"])
     run('sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"')  # NOQA
     sudo("pip install -U pip")
     sudo("pip install powerline-shell tmuxp")
     run("touch private.sh")
-    git_seed(dot_dir)
-    git_reset(dot_dir)
+    # Just commnet out both the below git commands for local installation
+    # git_seed(dot_dir)
+    # git_reset(dot_dir)
     with cd(dot_dir):
         with settings(warn_only=True):
             run("cp home/.* ~")
